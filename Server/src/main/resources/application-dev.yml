@@ -1,0 +1,8 @@
+server:
+  port: 8888
+  context-path: /001
+u: 
+  name: haha
+  age: 25
+  sex: '男'
+  phone: 112

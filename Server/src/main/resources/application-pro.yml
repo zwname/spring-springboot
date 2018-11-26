@@ -1,0 +1,8 @@
+server:
+  port: 8082
+  context-path: /002
+u:
+  name: ppp
+  age: ${random.int}
+  sex: '女'
+  phone: 15122563655

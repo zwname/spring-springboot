@@ -1,0 +1,34 @@
+name: '张飞'
+spring:
+  profiles:
+    active: zhengwei
+u:
+ name: '李四'
+ sex: '男'
+ phone: '123456'
+ age: 24
+
+#logging:
+ ## file: haha.log
+ # level:
+ #   root: DEBUG
+server:
+  port: 8000
+---
+
+spring:
+  profiles: zhengwei
+name: '郑伟'
+hello: good hello
+---
+
+spring:
+  profiles: liutong
+name: '刘彤'
+hello: goodbuy
+---
+spring:
+    profiles: wangwang
+name: '哈哈'
+hello: haha1
+

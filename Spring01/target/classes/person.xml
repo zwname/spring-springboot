@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="init" default-destroy-method="destroy"
+	>
+
+	<bean id="person" class="zw.itman.spring.pojo.Person">
+		<property name="name" value="张三"></property>
+		<property name="car" ref="car"></property>
+		<property name="age" value="26"></property>
+	</bean>
+	<bean id="car" class="zw.itman.spring.pojo.Car">
+		<!-- <property name="type" value="跑车"></property> -->
+		<!-- <property name="name" value="宝马3X"></property> -->
+		<constructor-arg index="0" value="跑车"></constructor-arg>
+		<constructor-arg index="1" value="布加迪威龙"></constructor-arg>
+		
+	</bean>
+</beans>
